@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Tech</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #183c63;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 120px;
+            height: auto;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        main {
+            background-color: #ffffff;
+            color: #183c63;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #183c63;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .autor {
+            color: #666;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #183c63;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo do Meu Blog Tech" class="logo">
+
+        <h1>Meu Blog Tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação.</p>
+    </header>
+
+    <main>
+        <article>
+            <h2>Meu Primeiro Post</h2>
+
+            <p class="autor">Por: Samuel bernardo maia</p>
+
+            <p>
+                Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de
+                programação, novidades do mundo da tecnologia e curiosidades
+                para quem deseja aprender mais sobre desenvolvimento de software.
+            </p>
+            <button>❤️ <SPAn>0</SPAn></button>
+            <button>👍 <SPAn>0</SPAn></button>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 samuel bernardo maia - Meu Blog Tech</p>
+    </footer>
+</body>
+<SCript>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach( function(botao){
+        botao.addEventListener("click", botaoclicado);
+
+        function botaoclicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    })
+
+
+</SCript>
+</html>
